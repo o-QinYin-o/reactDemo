@@ -77,18 +77,18 @@ function FancyInput(props, ref) {
 }
 FancyInput = forwardRef(FancyInput);
 
-function TestUseImperativeHandleRef () {
-  const ref = useRef(null)
-  function testCurrentRef () {
-    console.log(ref)
-  }
-  return (
-    <>
-      <FancyInput ref={ref}>Click me!</FancyInput>
-      <button onClick={testCurrentRef} style={{marginLeft: '20px'}}>test</button>
-    </>
-  )
-}
+// function TestUseImperativeHandleRef () {
+//   const ref = useRef(null)
+//   function testCurrentRef () {
+//     console.log(ref)
+//   }
+//   return (
+//     <>
+//       <FancyInput ref={ref}>Click me!</FancyInput>
+//       <button onClick={testCurrentRef} style={{marginLeft: '20px'}}>test</button>
+//     </>
+//   )
+// }
 
 function  TestPreCounter() {
   const [count, setCount] = useState(0);
